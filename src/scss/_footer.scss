@@ -1,0 +1,155 @@
+.footer {
+	background: #efefef;
+}
+.top__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+.footer-top {
+	&__block {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+}
+.item {
+	&-location__footer {
+		display: flex;
+		align-items: center;
+	}
+	&-map {
+		padding: 0 10px;
+		color: #363a45;
+		/* Menu style */
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%; /* 21px */
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: #00c65e;
+		}
+		@media (max-width: 320px) {
+			display: none;
+		}
+	}
+}
+.icon-arrow {
+	&__footer {
+		transition: transform 0.3s ease 0s;
+		cursor: pointer;
+		@media (max-width: 320px) {
+			margin: 0 0 0 10px;
+		}
+	}
+}
+._active-arrow__footer {
+	transform: rotate(-180deg);
+}
+.right {
+	h2 {
+		color: #363a45;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%; // 21px
+		padding: 0 20px 0 0;
+		@media (max-width: 425px) {
+			display: none;
+		}
+	}
+	img {
+		background-color: #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		&:not(:first-child) {
+			margin: 0 0 0 10.2px;
+		}
+		&:nth-child(2) {
+			padding: 7.19px;
+		}
+		&:nth-child(3) {
+			padding: 7.19px 7.18px;
+		}
+	}
+}
+.footer-body {
+	border-top: 1.5px solid #dcdcdc;
+}
+.body-row {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(auto, 1fr));
+	padding: 29.8px 0 108px 0;
+	row-gap: 20px;
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+	}
+	@media (max-width: 320px) {
+		column-gap: 20px;
+	}
+}
+.footer {
+	&__colum {
+		max-width: 130px;
+	}
+}
+.colum {
+	&__title {
+		color: #363a45;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 150%; // 21px
+	}
+
+	&__list {
+		color: #363a45;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 140%; // 16.8px
+		li {
+			margin: 8px 0 0 0;
+			transition: color 0.3s ease 0s;
+			cursor: pointer;
+			&:hover {
+				color: #00c65e;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.footer-lower {
+	background: #fff;
+}
+.lower {
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 9.5px 0;
+		flex: 1 1 33.333%;
+	}
+
+	&__block {
+		span {
+			color: #363a45;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 140%; //16.8px
+			transition: color 0.3s ease 0s;
+			&:hover {
+				color: #00c65e;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.block-lower {
+	font-size: 14px;
+	line-height: 150%;
+	& span:not(:last-child) {
+		margin: 0 13.13px 0 0;
+	}
+	@media (max-width: 320px) {
+		margin: 0;
+	}
+}
